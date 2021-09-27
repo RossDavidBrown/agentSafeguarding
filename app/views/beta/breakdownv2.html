@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-form-group">
+    <a href="04whoSearch.html" class="govuk-back-link">Back</a>
+    <br></br>
+
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+      Describe the incident</h1>
+
+<img src="/public/images/notification2.png" width="100%" height="100%" alt="Important: Do not include any personal information about DWP staff or customers in your responses. For example, do not use full names or National Insurance numbers. Keep to the facts and be as specific as possible.">
+<br></br>
+
+
+  <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="10" aria-describedby="with-hint-info with-hint-hint"></textarea>
+  <p>
+    <strong>Please confirm that you have you included in the description the following information:</strong> <br>
+  </p>
+
+  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste">
+            1. The reason for the interaction with the customer
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+            2. How did the incident start. (Was there a specific trigger that upset the customer?)
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+            3. The exact words that everyone used.
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+            4. How did you try to resolve the situation.
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+            5. If there were any witnesses to this incident. (No names, just a confirmation if any)
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+            6. How did your interaction with the customer end.
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+            7. How did you feel during the incident and how do you fell now.
+          </label>
+        </div>
+</div>
+<br></br>
+        <a href="10success.html" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        Submit report
+          </a>
+
+          <br></br>
+
+
+
+
+
+{% endblock %}
